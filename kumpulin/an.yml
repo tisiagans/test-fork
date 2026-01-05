@@ -1,0 +1,538 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: powershell.exe
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: C:\Users\azkia\Documents
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 120
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 30
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: floating
+    title: Terminalizer
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 12
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 900
+    content: "\e[?9001h\e[?1004h"
+  - delay: 322
+    content: "\e[?25l\e[2J\e[m\e[HWindows PowerShell\r\nCopyright (C) Microsoft Corporation. All rights reserved.\e[4;1HInstall the latest PowerShell for new features and improvements! https://aka.ms/PSWindows\e]0;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\a\e[?25h"
+  - delay: 12
+    content: "\e[?25l\e[6;1H\e[?25h"
+  - delay: 606
+    content: 'PS C:\Users\azkia\Documents> '
+  - delay: 1665
+    content: "\e[?25l"
+  - delay: 18
+    content: "\e[93mm\e[?25h"
+  - delay: 311
+    content: "\e[m\e[?25l"
+  - delay: 14
+    content: "\e[93m\bmy\e[?25h"
+  - delay: 587
+    content: "\e[m\e[?25l"
+  - delay: 14
+    content: "\e[93m\e[6;30Hmys\e[?25h"
+  - delay: 333
+    content: "\e[m\e[?25l"
+  - delay: 21
+    content: "\e[93m\e[6;30Hmysq\e[?25h"
+  - delay: 620
+    content: "\e[m\e[?25l"
+  - delay: 25
+    content: "\e[93m\e[6;30Hmysql\e[?25h"
+  - delay: 587
+    content: "\e[m\e[?25l"
+  - delay: 12
+    content: "\e[93m\e[6;30Hmysql \e[?25h"
+  - delay: 509
+    content: "\e[m\e[?25l"
+  - delay: 10
+    content: "\e[93m\e[6;30Hmysql \e[37m-\e[?25h"
+  - delay: 448
+    content: "\e[m\e[?25l"
+  - delay: 11
+    content: "\e[93m\e[6;30Hmysql \e[90m-u\e[?25h"
+  - delay: 263
+    content: "\e[m\e[?25l"
+  - delay: 28
+    content: "\e[93m\e[6;30Hmysql \e[90m-u \e[?25h"
+  - delay: 73
+    content: "\e[m\e[?25l"
+  - delay: 15
+    content: "\e[93m\e[6;30Hmysql \e[90m-u \e[37mr\e[?25h"
+  - delay: 196
+    content: "\e[m\e[?25l"
+  - delay: 24
+    content: "\e[93m\e[6;30Hmysql \e[90m-u \e[37mro\e[?25h"
+  - delay: 123
+    content: "\e[m\e[?25l"
+  - delay: 23
+    content: "\e[93m\e[6;30Hmysql \e[90m-u \e[37mroo\e[?25h"
+  - delay: 111
+    content: "\e[m\e[?25l"
+  - delay: 23
+    content: "\e[93m\e[6;30Hmysql \e[90m-u \e[37mroot\e[?25h"
+  - delay: 346
+    content: "\e[m\e[?25l"
+  - delay: 18
+    content: "\e[93m\e[6;30Hmysql \e[90m-u \e[37mroot \e[?25h"
+  - delay: 319
+    content: "\e[m\e[?25l"
+  - delay: 20
+    content: "\e[93m\e[6;30Hmysql \e[90m-u \e[37mroot -\e[?25h"
+  - delay: 194
+    content: "\e[m\e[?25l"
+  - delay: 31
+    content: "\e[93m\e[6;30Hmysql \e[90m-u \e[37mroot \e[90m-p\e[?25h"
+  - delay: 1015
+    content: "\e[m"
+  - delay: 16
+    content: "\r\n"
+  - delay: 134
+    content: E
+  - delay: 22
+    content: 'nter password: '
+  - delay: 1080
+    content: '*'
+  - delay: 111
+    content: '*'
+  - delay: 164
+    content: '*'
+  - delay: 232
+    content: '*'
+  - delay: 233
+    content: '*'
+  - delay: 94
+    content: '*'
+  - delay: 220
+    content: '*'
+  - delay: 136
+    content: '*'
+  - delay: 305
+    content: '*'
+  - delay: 356
+    content: '*'
+  - delay: 143
+    content: '*'
+  - delay: 446
+    content: "\r\n"
+  - delay: 197
+    content: "Welcome to the MariaDB monitor.  Commands end with ; or \\g.\r\n"
+  - delay: 54
+    content: "Your MariaDB connection id is 48\r\nServer version: 11.8.3-MariaDB mariadb.org binary distribution\r\n"
+  - delay: 19
+    content: "\e[?25l\r\nCopyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.\e[14;1HType 'help;' or '\\h' for help. Type '\\c' to clear the current input statement.\e[16;1HMariaDB [(none)]> \e[?25h"
+  - delay: 2263
+    content: u
+  - delay: 83
+    content: s
+  - delay: 227
+    content: e
+  - delay: 204
+    content: ' '
+  - delay: 461
+    content: p
+  - delay: 91
+    content: e
+  - delay: 182
+    content: r
+  - delay: 82
+    content: p
+  - delay: 328
+    content: u
+  - delay: 104
+    content: s
+  - delay: 204
+    content: t
+  - delay: 115
+    content: a
+  - delay: 223
+    content: k
+  - delay: 138
+    content: a
+  - delay: 126
+    content: a
+  - delay: 141
+    content: 'n'
+  - delay: 646
+    content: ;
+  - delay: 285
+    content: "\r\n"
+  - delay: 41
+    content: Database changed
+  - delay: 24
+    content: "\r\nMariaDB [perpustakaan]> "
+  - delay: 1000
+    content: s
+  - delay: 232
+    content: e
+  - delay: 112
+    content: l
+  - delay: 86
+    content: e
+  - delay: 287
+    content: c
+  - delay: 149
+    content: t
+  - delay: 312
+    content: ' '
+  - delay: 377
+    content: '*'
+  - delay: 400
+    content: ' '
+  - delay: 285
+    content: f
+  - delay: 52
+    content: r
+  - delay: 934
+    content: o
+  - delay: 215
+    content: m
+  - delay: 275
+    content: ' '
+  - delay: 327
+    content: p
+  - delay: 260
+    content: e
+  - delay: 217
+    content: r
+  - delay: 498
+    content: p
+  - delay: 314
+    content: u
+  - delay: 70
+    content: s
+  - delay: 156
+    content: t
+  - delay: 78
+    content: a
+  - delay: 238
+    content: k
+  - delay: 120
+    content: a
+  - delay: 69
+    content: a
+  - delay: 793
+    content: 'n'
+  - delay: 406
+    content: ;
+  - delay: 697
+    content: "\r\n"
+  - delay: 47
+    content: ERROR 1146 (42S02)
+  - delay: 11
+    content: ": Table 'perpustakaan.perpustakaan' doesn't exist\r\nMariaDB [perpustakaan]> "
+  - delay: 2238
+    content: s
+  - delay: 203
+    content: e
+  - delay: 71
+    content: l
+  - delay: 104
+    content: e
+  - delay: 214
+    content: c
+  - delay: 147
+    content: t
+  - delay: 323
+    content: ' '
+  - delay: 669
+    content: '8'
+  - delay: 721
+    content: "\b \b"
+  - delay: 461
+    content: '*'
+  - delay: 488
+    content: ' '
+  - delay: 432
+    content: f
+  - delay: 183
+    content: r
+  - delay: 62
+    content: o
+  - delay: 256
+    content: m
+  - delay: 207
+    content: ' '
+  - delay: 229
+    content: b
+  - delay: 175
+    content: u
+  - delay: 182
+    content: k
+  - delay: 219
+    content: u
+  - delay: 785
+    content: ;
+  - delay: 304
+    content: "\r\n"
+  - delay: 48
+    content: >-
+      +---------+---------------------------------+------------------------------------+--------------+---------------+-------------+------------------+
+  - delay: 9
+    content: "\r\n| id_buku | judul                           | penulis                            | tahun_terbit | isbn          | id_kategori | jumlah_eksemplar |\r\n+---------+---------------------------------+------------------------------------+--------------+---------------+-------------+------------------+\r\n|       5 | Hall of Friends Monolog Rifan   | Nadia Ristivani                    |         2025 | 9786022207696 |           1 |                2 |\r\n|       6 | Mozachiko                       | Poppi P"
+  - delay: 6
+    content: >-
+      ertiwi                      |         2019 | 9786025406744 |           1
+      |                5 |
+  - delay: 5
+    content: "\r\n|       7 | Dago Love Story                 | Skysphire                          |         2022 | 9786235953113 |       \r\n\e[29;120H     1 |\e[2C              9 |\r\n|       8 | Langsung Jago Berbahasa Inggris | Gartika Rahmasari & Sherien Sabbah |         2012 | 9786027639027 |       \r\n\e[29;120H     2 |                1 |\r\n|       9 | 12 Cerita Glen Anggara          | Luluk HF                           |         2019 | 9786237439073 |       \r\n\e[29;120H     1 |                1 |\r\n+---------+---------------------------------+------------------------------------+--------------+---------------+-------\r\n\e[29;120H-------+------------------+\r\n5 rows in set (0.047 sec)\r\n\nMariaDB [perpustakaan]>\r"
+  - delay: 7
+    content: "\nMariaDB [perpustakaan]>\e[1C"
+  - delay: 652
+    content: s
+  - delay: 268
+    content: e
+  - delay: 80
+    content: l
+  - delay: 93
+    content: e
+  - delay: 265
+    content: c
+  - delay: 184
+    content: t
+  - delay: 448
+    content: ' '
+  - delay: 487
+    content: '*'
+  - delay: 456
+    content: ' '
+  - delay: 68
+    content: f
+  - delay: 201
+    content: r
+  - delay: 49
+    content: o
+  - delay: 212
+    content: m
+  - delay: 246
+    content: ' '
+  - delay: 2779
+    content: p
+  - delay: 69
+    content: e
+  - delay: 169
+    content: m
+  - delay: 231
+    content: i
+  - delay: 207
+    content: 'n'
+  - delay: 126
+    content: a
+  - delay: 71
+    content: j
+  - delay: 180
+    content: m
+  - delay: 561
+    content: "\b \b"
+  - delay: 154
+    content: "\b \b"
+  - delay: 123
+    content: "\b \b"
+  - delay: 543
+    content: j
+  - delay: 90
+    content: a
+  - delay: 117
+    content: m
+  - delay: 88
+    content: a
+  - delay: 95
+    content: 'n'
+  - delay: 755
+    content: ;
+  - delay: 263
+    content: "\r\n"
+  - delay: 24
+    content: "+---------------+------------+---------+----------------+-----------------+\r\n| id_peminjaman | id_anggota | id_buku | tanggal_pinjam | tanggal_kembali |\r\n+---------------+------------+---------+----------------+-----------------+\r\n|             3 |          1 |       5 | 2025-02-05     | 2025-02-10      |"
+  - delay: 5
+    content: "\r\n|             4 |          2 |       8 | 2025-03-15     | 2025-03-20\e[5C |"
+  - delay: 6
+    content: "\r\n|             5 |          5 |       7 | 2025-04-25     | 2025-04-30      |"
+  - delay: 5
+    content: "\r\n|             6 |          1 |       9 | 2025-02-11     | 2025-02-16      |\r\n+---------------+------------+---------+----------------+-----------------+\r\n4 rows in set (0.025 sec)\r\n"
+  - delay: 5
+    content: "\nMariaDB [perpustakaan]>\e[1C"
+  - delay: 343
+    content: s
+  - delay: 235
+    content: e
+  - delay: 77
+    content: l
+  - delay: 93
+    content: e
+  - delay: 556
+    content: c
+  - delay: 452
+    content: t
+  - delay: 329
+    content: ' '
+  - delay: 388
+    content: '*'
+  - delay: 425
+    content: ' '
+  - delay: 105
+    content: f
+  - delay: 172
+    content: r
+  - delay: 59
+    content: o
+  - delay: 277
+    content: m
+  - delay: 244
+    content: ' '
+  - delay: 4058
+    content: k
+  - delay: 104
+    content: a
+  - delay: 253
+    content: t
+  - delay: 57
+    content: e
+  - delay: 164
+    content: g
+  - delay: 408
+    content: o
+  - delay: 105
+    content: r
+  - delay: 113
+    content: i
+  - delay: 610
+    content: ;
+  - delay: 274
+    content: "\r\n+-------------+---------------+\r\n| id_kategori | nama_kategori |\r\n+-------------+---------------+\r\n|           1 | Fiksi         |\r\n|           2 | Nonfiksi      |\r\n+-------------+---------------+\r\n2 rows in set (0.002 sec)\r\n"
+  - delay: 11
+    content: "\nMariaDB [perpustakaan]>\e[1C"
+  - delay: 1658
+    content: e
+  - delay: 403
+    content: x
+  - delay: 177
+    content: i
+  - delay: 650
+    content: t
+  - delay: 523
+    content: "\r\nBye"
+  - delay: 11
+    content: "\r\n"
+  - delay: 107
+    content: 'PS C:\Users\azkia\Documents> '
+  - delay: 770
+    content: "\e[?25l"
+  - delay: 26
+    content: "\e[93me\e[?25h"
+  - delay: 317
+    content: "\e[m\e[?25l"
+  - delay: 12
+    content: "\e[93m\bex\e[?25h"
+  - delay: 224
+    content: "\e[m\e[?25l"
+  - delay: 19
+    content: "\e[93m\e[30;30Hexi\e[?25h"
+  - delay: 171
+    content: "\e[m\e[?25l"
+  - delay: 13
+    content: "\e[92m\e[30;30Hexit\e[?25h"
+  - delay: 644
+    content: "\e[m"
+  - delay: 24
+    content: "\r\n"
