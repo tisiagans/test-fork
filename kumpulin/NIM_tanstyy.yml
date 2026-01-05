@@ -1,0 +1,535 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: powershell.exe
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: C:\Users\Intan\Documents
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 120
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 30
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: floating
+    title: Terminalizer
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 12
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 1784
+    content: "\e[?9001h\e[?1004h"
+  - delay: 237
+    content: "\e[?25l\e[2J\e[m\e[HWindows PowerShell\r\nCopyright (C) Microsoft Corporation. All rights reserved.\e[4;1HInstall the latest PowerShell for new features and improvements! https://aka.ms/PSWindows\e]0;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\a\e[?25h"
+  - delay: 24
+    content: "\e[?25l\e[6;1H\e[?25h"
+  - delay: 375
+    content: 'PS C:\Users\Intan\Documents> '
+  - delay: 4000
+    content: "\e[?25l"
+  - delay: 18
+    content: "\e[93mm\e[?25h"
+  - delay: 489
+    content: "\e[m\e[?25l"
+  - delay: 22
+    content: "\e[93m\bmy\e[?25h"
+  - delay: 169
+    content: "\e[m\e[?25l"
+  - delay: 17
+    content: "\e[93m\e[6;30Hmys\e[?25h"
+  - delay: 723
+    content: "\e[m\e[?25l"
+  - delay: 26
+    content: "\e[93m\e[6;30Hmysq\e[?25h"
+  - delay: 347
+    content: "\e[m\e[?25l"
+  - delay: 14
+    content: "\e[93m\e[6;30Hmysql\e[?25h"
+  - delay: 795
+    content: "\e[m\e[?25l"
+  - delay: 14
+    content: "\e[93m\e[6;30Hmysql \e[?25h"
+  - delay: 164
+    content: "\e[m\e[?25l"
+  - delay: 22
+    content: "\e[93m\e[6;30Hmysql \e[37m-\e[?25h"
+  - delay: 725
+    content: "\e[m\e[?25l"
+  - delay: 23
+    content: "\e[93m\e[6;30Hmysql \e[90m-u\e[?25h"
+  - delay: 386
+    content: "\e[m\e[?25l"
+  - delay: 20
+    content: "\e[93m\e[6;30Hmysql \e[90m-u \e[?25h"
+  - delay: 381
+    content: "\e[m\e[?25l"
+  - delay: 24
+    content: "\e[93m\e[6;30Hmysql \e[90m-u \e[37mr\e[?25h"
+  - delay: 146
+    content: "\e[m\e[?25l"
+  - delay: 11
+    content: "\e[93m\e[6;30Hmysql \e[90m-u \e[37mro\e[?25h"
+  - delay: 158
+    content: "\e[m\e[?25l"
+  - delay: 13
+    content: "\e[93m\e[6;30Hmysql \e[90m-u \e[37mroo\e[?25h"
+  - delay: 128
+    content: "\e[m\e[?25l"
+  - delay: 12
+    content: "\e[93m\e[6;30Hmysql \e[90m-u \e[37mroot\e[?25h"
+  - delay: 499
+    content: "\e[m\e[?25l"
+  - delay: 12
+    content: "\e[93m\e[6;30Hmysql \e[90m-u \e[37mroot \e[?25h"
+  - delay: 618
+    content: "\e[m\e[?25l"
+  - delay: 22
+    content: "\e[93m\e[6;30Hmysql \e[90m-u \e[37mroot -\e[?25h"
+  - delay: 446
+    content: "\e[m\e[?25l"
+  - delay: 23
+    content: "\e[93m\e[6;30Hmysql \e[90m-u \e[37mroot \e[90m-p\e[?25h"
+  - delay: 2824
+    content: "\e[m"
+  - delay: 26
+    content: "\r\n"
+  - delay: 66
+    content: E
+  - delay: 11
+    content: 'nter password: '
+  - delay: 1381
+    content: '*'
+  - delay: 177
+    content: '*'
+  - delay: 315
+    content: '*'
+  - delay: 260
+    content: '*'
+  - delay: 159
+    content: '*'
+  - delay: 844
+    content: '*'
+  - delay: 122
+    content: '*'
+  - delay: 769
+    content: "\r\n"
+  - delay: 96
+    content: Welcome to the MariaDB monitor.  Commands end with ; or \g.
+  - delay: 15
+    content: "\e[?25l\r\nYour MariaDB connection id is 17\r\nServer version: 11.8.3-MariaDB mariadb.org binary distribution\e[12;1HCopyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.\e[14;1HType 'help;' or '\\h' for help. Type '\\c' to clear the current input statement.\e[16;1HMariaDB [(none)]> \e[?25h"
+  - delay: 1878
+    content: u
+  - delay: 213
+    content: s
+  - delay: 206
+    content: e
+  - delay: 327
+    content: ' '
+  - delay: 348
+    content: p
+  - delay: 155
+    content: e
+  - delay: 170
+    content: r
+  - delay: 91
+    content: p
+  - delay: 290
+    content: u
+  - delay: 156
+    content: s
+  - delay: 230
+    content: t
+  - delay: 182
+    content: a
+  - delay: 273
+    content: k
+  - delay: 178
+    content: a
+  - delay: 298
+    content: a
+  - delay: 47
+    content: 'n'
+  - delay: 982
+    content: ;
+  - delay: 1078
+    content: "\r\n"
+  - delay: 11
+    content: "Database changed\r\nMariaDB [perpustakaan]> "
+  - delay: 2598
+    content: s
+  - delay: 187
+    content: h
+  - delay: 342
+    content: o
+  - delay: 188
+    content: w
+  - delay: 378
+    content: ' '
+  - delay: 195
+    content: d
+  - delay: 174
+    content: a
+  - delay: 198
+    content: t
+  - delay: 237
+    content: a
+  - delay: 435
+    content: b
+  - delay: 112
+    content: a
+  - delay: 308
+    content: s
+  - delay: 246
+    content: e
+  - delay: 251
+    content: s
+  - delay: 1135
+    content: ;
+  - delay: 795
+    content: "\r\n"
+  - delay: 11
+    content: "+--------------------+\r\n| Database           |\r\n+--------------------+\r\n| information_schema |\r\n| mysql    "
+  - delay: 15
+    content: "          |\r\n| performance_schema |\r\n| perpus             |\r\n| perpustakaan       |\r\n| sys                |\r\n| warteg_bahari      |\r\n+--------------------+\r\n7 rows in set (0.002 sec)\r\n"
+  - delay: 11
+    content: "\nMariaDB [perpustakaan]>\e[1C"
+  - delay: 1311
+    content: s
+  - delay: 263
+    content: e
+  - delay: 156
+    content: l
+  - delay: 72
+    content: e
+  - delay: 969
+    content: c
+  - delay: 167
+    content: t
+  - delay: 429
+    content: ' '
+  - delay: 329
+    content: d
+  - delay: 199
+    content: a
+  - delay: 229
+    content: t
+  - delay: 158
+    content: a
+  - delay: 464
+    content: b
+  - delay: 109
+    content: a
+  - delay: 249
+    content: s
+  - delay: 325
+    content: e
+  - delay: 1062
+    content: (
+  - delay: 267
+    content: )
+  - delay: 947
+    content: ;
+  - delay: 823
+    content: "\r\n+--------------+\r\n| database()   |\r\n+--------------+\r\n| perpustakaan |\r\n+--------------+\r\n1 row in set (0.000 sec)\r\n"
+  - delay: 16
+    content: "\nMariaDB [perpustakaan]>\e[1C"
+  - delay: 930
+    content: S
+  - delay: 245
+    content: E
+  - delay: 203
+    content: L
+  - delay: 67
+    content: E
+  - delay: 673
+    content: C
+  - delay: 196
+    content: T
+  - delay: 236
+    content: ' '
+  - delay: 1047
+    content: '*'
+  - delay: 554
+    content: ' '
+  - delay: 331
+    content: F
+  - delay: 243
+    content: R
+  - delay: 111
+    content: O
+  - delay: 241
+    content: M
+  - delay: 274
+    content: ' '
+  - delay: 368
+    content: b
+  - delay: 207
+    content: u
+  - delay: 233
+    content: k
+  - delay: 219
+    content: u
+  - delay: 859
+    content: ;
+  - delay: 406
+    content: "\r\n+---------+--------------------------+-------------------+--------------+------+------------------+\r\n| id_buku | judul                    | penulis           | tahun_terbit | isbn | jumlah_eksemplar |\r\n+---------+--------------------------+-------------------+--------------+------+------------------+"
+  - delay: 14
+    content: "\r\n|       1 | Pemrograman untuk Pemula | Amara             |         2018 | 120  |                1 |\r\n"
+  - delay: 15
+    content: "|       2 | FAME                     | Riize             |         2025 | 121  |\e[14X\e[14C  1 |"
+  - delay: 16
+    content: "\r\n|       3 | Sakamoto Days            | Yuto Suzuki       |         2020 | 122\e[1C |                1 |"
+  - delay: 14
+    content: "\r\n|       4 | Detektif Conan           | Aoyama Gosho      |         2019 | 123  |                1 |"
+  - delay: 14
+    content: "\r\n|       5 | Haikyuu                  | Haruichi Furudate |         2013 | 124  |\e[8C        1 |"
+  - delay: 6
+    content: "\r\n|       6 | Left and right           | Seventeen         |         2020 | 125  |                1 |\r\n|       7 | Home Run                 | Seventeen         |\e[3C"
+  - delay: 8
+    content: '      2020 | 126  |                1 |'
+  - delay: 8
+    content: "\r\n|       8 | Together                 | Seve"
+  - delay: 9
+    content: nteen         |         2020 | 127  |                1 |
+  - delay: 7
+    content: "\r\n|       9 | langit biru\e[12C"
+  - delay: 11
+    content: "  | hujan             |         2025 | 128  |                1 |\r\n|      10 | bumi"
+  - delay: 16
+    content: "                     | tere liye         |         2014 | 129  |                1 |\r\n"
+  - delay: 15
+    content: "|      11 | bulan                    | tere liye         |         2015 | 130  |\e[9X\e[9C       1 |"
+  - delay: 15
+    content: "\r\n|      12 | matahari                 | tere liye         |         2016 | 131\e[1C |                1 |"
+  - delay: 13
+    content: "\r\n|      13 | bintang                  | tere liye         |         2017 | 132  |                1 |"
+  - delay: 13
+    content: "\r\n|      14 | ceros dan batozar        | tere liye\e[1C"
+  - delay: 7
+    content: '        |         2018 | 133  |                1 |'
+  - delay: 10
+    content: "\r\n|      15 | komet\e[13C"
+  - delay: 5
+    content: '       | tere liye         |         2018 | 134  |                1 |'
+  - delay: 10
+    content: "\r\n|      16 | komet minor              | tere liye         |         2019 | 135  |                1 |\r\n+---------+--------------------------+-------------------+--------------+------+------------------+\r\n16 rows in set (0.001 sec)\r\n"
+  - delay: 9
+    content: "\nMariaDB [perpustakaan]>\e[1C"
+  - delay: 1060
+    content: S
+  - delay: 390
+    content: E
+  - delay: 188
+    content: L
+  - delay: 50
+    content: E
+  - delay: 331
+    content: C
+  - delay: 174
+    content: T
+  - delay: 305
+    content: ' '
+  - delay: 1012
+    content: '*'
+  - delay: 755
+    content: F
+  - delay: 211
+    content: R
+  - delay: 162
+    content: O
+  - delay: 267
+    content: M
+  - delay: 846
+    content: "\b"
+  - delay: 159
+    content: "\b"
+  - delay: 160
+    content: "\b"
+  - delay: 172
+    content: "\b"
+  - delay: 420
+    content: "\e[?25l FROM\e[30;34H\e[?25h"
+  - delay: 785
+    content: "\e[1C"
+  - delay: 171
+    content: "\e[1C"
+  - delay: 153
+    content: "\e[1C"
+  - delay: 148
+    content: "\e[1C"
+  - delay: 648
+    content: ' '
+  - delay: 506
+    content: a
+  - delay: 166
+    content: 'n'
+  - delay: 270
+    content: g
+  - delay: 119
+    content: g
+  - delay: 521
+    content: o
+  - delay: 343
+    content: t
+  - delay: 167
+    content: a
+  - delay: 789
+    content: ;
+  - delay: 919
+    content: "\r\n+------------+--------+----------------------+--------------+----------------+\r\n| id_anggota | nama   | alamat               | no_telepon   | tanggal_daftar |\r\n+------------+--------+----------------------+--------------+----------------+"
+  - delay: 12
+    content: "\r\n|          1 | Wonwoo | Jl. Braga No. 27     | 081213141516 | 2025-02-19     |"
+  - delay: 9
+    content: "\r\n|          2 | Anton  | Jl. Malioboro No. 19 | 081298984546 | 2025-03-19     |"
+  - delay: 5
+    content: "\r\n|          3 | Keshi  | Jl. S"
+  - delay: 7
+    content: aturnus No. 14  | 081122334455 | 2025-03-21     |
+  - delay: 8
+    content: "\r\n|          4 | Nagumo | Jl. Shibuya No. 7    | 082233445566 | 2025-04-18     |\r\n|\e[5C"
+  - delay: 5
+    content: "     5 | Kaito  | Jl. Asakusa No. 18   | 081218181917 | 2025-04-20     |\r\n+------------+--------+----------------------+--------------+----------------+\r\n5 rows in set (0.001 sec)\r\n"
+  - delay: 8
+    content: "\nMariaDB [perpustakaan]>\e[1C"
+  - delay: 1731
+    content: e
+  - delay: 319
+    content: x
+  - delay: 238
+    content: i
+  - delay: 246
+    content: t
+  - delay: 1274
+    content: "\r\nBye"
+  - delay: 8
+    content: "\r\n"
+  - delay: 31
+    content: 'PS C:\Users\Intan\Documents> '
+  - delay: 3960
+    content: "\e[?25l"
+  - delay: 18
+    content: "\e[93m^D\e[?25h"
+  - delay: 1330
+    content: "\e[m"
+  - delay: 24
+    content: "\r\n"
+  - delay: 210
+    content: "\e[38;5;9m : The term '' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the \e[m\r\n\e[38;5;9mspelling of the name, or if a path was included, verify that the path is correct and try again.\e[m\r\n\e[38;5;9mAt line:1 char:1\e[m\r\n\e[38;5;9m+\e[1C\e[m\r\n\e[38;5;9m+ ~\e[m\r\n\e[38;5;9m    + CategoryInfo          : ObjectNotFound: (:String) [], CommandNotFoundException\e[m\r\n\e[38;5;9m    + FullyQualifiedErrorId : CommandNotFoundException\e[m\r\n\e[38;5;9m\e[1C"
+  - delay: 13
+    content: "\e[m\r\n"
+  - delay: 19
+    content: 'PS C:\Users\Intan\Documents> '
+  - delay: 2400
+    content: "\e[?25l"
+  - delay: 14
+    content: "\e[93me\e[?25h"
+  - delay: 348
+    content: "\e[m\e[?25l"
+  - delay: 25
+    content: "\e[93m\bex\e[?25h"
+  - delay: 211
+    content: "\e[m\e[?25l"
+  - delay: 28
+    content: "\e[93m\e[30;30Hexi\e[?25h"
+  - delay: 454
+    content: "\e[m\e[?25l"
+  - delay: 25
+    content: "\e[92m\e[30;30Hexit\e[?25h"
+  - delay: 1676
+    content: "\e[m"
+  - delay: 21
+    content: "\r\n"
