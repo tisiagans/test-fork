@@ -1,0 +1,553 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: powershell.exe
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: C:\Users\MyBook Hype AMD
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 120
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 30
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: floating
+    title: Terminalizer
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 12
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 1030
+    content: "\e[?9001h\e[?1004h"
+  - delay: 101
+    content: "\e[?25l\e[2J\e[m\e[HWindows PowerShell\r\nCopyright (C) Microsoft Corporation. All rights reserved.\e[4;1HInstall the latest PowerShell for new features and improvements! https://aka.ms/PSWindows\e]0;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\a\e[?25h"
+  - delay: 18
+    content: "\e[?25l\e[6;1H\e]0;Administrator: C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\a\e[?25h"
+  - delay: 216
+    content: 'PS C:\Users\MyBook Hype AMD> '
+  - delay: 2095
+    content: "\e[?25l"
+  - delay: 22
+    content: "\e[93mterminalizer \e[37mrecord test1\e[?25h"
+  - delay: 122
+    content: "\e[m\e[?25l"
+  - delay: 18
+    content: "\e[93m\e[6;30Hterminalizer \e[37mrecord test \e[97m1\e[?25h"
+  - delay: 135
+    content: "\e[m\e[?25l"
+  - delay: 21
+    content: "\e[92m\e[6;30Hexit\e[22X\e[?25h"
+  - delay: 133
+    content: "\e[m\e[?25l"
+  - delay: 22
+    content: "\e[93m\e[6;30Hterminalizer \e[37mplay test\e[?25h"
+  - delay: 355
+    content: "\e[m\e[?25l"
+  - delay: 22
+    content: "\e[93m\e[6;30Hterminalizer \e[37mrecord test\e[?25h"
+  - delay: 291
+    content: "\e[m\e[?25l"
+  - delay: 22
+    content: "\e[93m\e[6;30H.\\mysql \e[90m-u \e[37mroot \e[90m-p      \e[6;48H\e[?25h"
+  - delay: 260
+    content: "\e[m\e[?25l"
+  - delay: 20
+    content: "\e[93m\e[6;30Hcd \e[36m\"C:\\Program Files\\MariaDB 11.8\\bin\"\e[?25h"
+  - delay: 140
+    content: "\e[m\e[?25l"
+  - delay: 16
+    content: "\e[93m\e[6;30Hclear\e[33X\e[?25h"
+  - delay: 467
+    content: "\e[m\e[?25l"
+  - delay: 18
+    content: "\e[93m\e[6;30Hcd \e[36m\"C:\\Program Files\\MariaDB 11.8\\bin\"\e[?25h"
+  - delay: 732
+    content: "\e[m"
+  - delay: 17
+    content: "\r\n"
+  - delay: 89
+    content: 'PS C:\Program Files\MariaDB 11.8\bin> '
+  - delay: 329
+    content: "\e[?25l"
+  - delay: 22
+    content: "\e[93mcd \e[36m\"C:\\Program Files\\MariaDB 11.8\\bin\"\e[?25h"
+  - delay: 112
+    content: "\e[m\e[?25l"
+  - delay: 14
+    content: "\e[93m\e[7;39Hterminalizer \e[37mrecord test1\e[13X\e[?25h"
+  - delay: 200
+    content: "\e[m\e[?25l"
+  - delay: 18
+    content: "\e[93m\e[7;39Hterminalizer \e[37mrecord test \e[97m1\e[?25h"
+  - delay: 158
+    content: "\e[m\e[?25l"
+  - delay: 14
+    content: "\e[92m\e[7;39Hexit\e[22X\e[?25h"
+  - delay: 351
+    content: "\e[m\e[?25l"
+  - delay: 9
+    content: "\e[93m\e[7;39Hterminalizer \e[37mplay test\e[?25h"
+  - delay: 448
+    content: "\e[m\e[?25l"
+  - delay: 20
+    content: "\e[93m\e[7;39Hterminalizer \e[37mrecord test\e[?25h"
+  - delay: 308
+    content: "\e[m\e[?25l"
+  - delay: 19
+    content: "\e[93m\e[7;39H.\\mysql \e[90m-u \e[37mroot \e[90m-p      \e[7;57H\e[?25h"
+  - delay: 439
+    content: "\e[m\e[?25l"
+  - delay: 13
+    content: "\e[93m\e[7;39Hclear\e[13X\e[?25h"
+  - delay: 305
+    content: "\e[m\e[?25l"
+  - delay: 22
+    content: "\e[93m\e[7;39H.\\mysql \e[90m-u \e[37mroot \e[90m-p\e[?25h"
+  - delay: 675
+    content: "\e[m"
+  - delay: 11
+    content: "\r\n"
+  - delay: 227
+    content: E
+  - delay: 23
+    content: 'nter password: '
+  - delay: 1159
+    content: '*'
+  - delay: 50
+    content: '*'
+  - delay: 157
+    content: '*'
+  - delay: 157
+    content: '*'
+  - delay: 76
+    content: '*'
+  - delay: 692
+    content: '*'
+  - delay: 61
+    content: '*'
+  - delay: 65
+    content: '*'
+  - delay: 231
+    content: "\r\n"
+  - delay: 103
+    content: Welcome to the MariaDB monitor.  Commands end with ; or \g.
+  - delay: 13
+    content: "\e[?25l\r\nYour MariaDB connection id is 3\r\nServer version: 11.8.3-MariaDB mariadb.org binary distribution\e[13;1HCopyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.\e[15;1HType 'help;' or '\\h' for help. Type '\\c' to clear the current input statement.\e[17;1HMariaDB [(none)]> \e[?25h"
+  - delay: 1735
+    content: c
+  - delay: 325
+    content: r
+  - delay: 73
+    content: e
+  - delay: 105
+    content: a
+  - delay: 76
+    content: t
+  - delay: 161
+    content: e
+  - delay: 754
+    content: ' '
+  - delay: 163
+    content: d
+  - delay: 59
+    content: a
+  - delay: 126
+    content: t
+  - delay: 92
+    content: a
+  - delay: 147
+    content: b
+  - delay: 88
+    content: a
+  - delay: 133
+    content: s
+  - delay: 257
+    content: e
+  - delay: 2030
+    content: ' '
+  - delay: 2355
+    content: w
+  - delay: 134
+    content: a
+  - delay: 60
+    content: r
+  - delay: 222
+    content: t
+  - delay: 218
+    content: e
+  - delay: 217
+    content: g
+  - delay: 560
+    content: "\r\n"
+  - delay: 13
+    content: '    -> '
+  - delay: 1509
+    content: ;
+  - delay: 182
+    content: "\r\n"
+  - delay: 14
+    content: "\e[?25lQuery OK, 1 row affected (0.010 sec)\e[21;1HMariaDB [(none)]> \e[?25h"
+  - delay: 1160
+    content: u
+  - delay: 101
+    content: s
+  - delay: 203
+    content: e
+  - delay: 194
+    content: ' '
+  - delay: 301
+    content: w
+  - delay: 116
+    content: a
+  - delay: 308
+    content: r
+  - delay: 189
+    content: t
+  - delay: 80
+    content: e
+  - delay: 147
+    content: g
+  - delay: 964
+    content: ;
+  - delay: 143
+    content: "\r\n"
+  - delay: 14
+    content: "Database changed\r\nMariaDB [warteg]> "
+  - delay: 1586
+    content: c
+  - delay: 230
+    content: r
+  - delay: 49
+    content: e
+  - delay: 73
+    content: a
+  - delay: 93
+    content: t
+  - delay: 141
+    content: e
+  - delay: 88
+    content: ' '
+  - delay: 179
+    content: t
+  - delay: 122
+    content: a
+  - delay: 317
+    content: b
+  - delay: 298
+    content: l
+  - delay: 106
+    content: e
+  - delay: 136
+    content: ' '
+  - delay: 14826
+    content: "\e[?25l\e[23;19Huse warteg;  \e[23;30H\e[?25h"
+  - delay: 198
+    content: "\e[?25l\e[23;19H;\e[10X\e[?25h"
+  - delay: 661
+    content: "\buse warteg;"
+  - delay: 659
+    content: "\e[?25l\e[23;19H;\e[10X\e[?25h"
+  - delay: 180
+    content: "\bcreate database warteg"
+  - delay: 612
+    content: "\e[?25l\e[23;19H;\e[21X\e[?25h"
+  - delay: 167
+    content: "\buse warteg;"
+  - delay: 1488
+    content: "\e[?25l\e[23;19H;\e[10X\e[?25h"
+  - delay: 194
+    content: "\bcreate database warteg"
+  - delay: 2106
+    content: "\e[?25l\e[23;19H;\e[21X\e[?25h"
+  - delay: 176
+    content: "\buse warteg;"
+  - delay: 835
+    content: "\e[?25l\e[23;19H;\e[10X\e[?25h"
+  - delay: 558
+    content: "\b \b"
+  - delay: 726
+    content: c
+  - delay: 245
+    content: r
+  - delay: 77
+    content: e
+  - delay: 82
+    content: a
+  - delay: 112
+    content: t
+  - delay: 95
+    content: e
+  - delay: 372
+    content: ' '
+  - delay: 311
+    content: t
+  - delay: 133
+    content: a
+  - delay: 144
+    content: b
+  - delay: 643
+    content: l
+  - delay: 143
+    content: e
+  - delay: 184
+    content: ' '
+  - delay: 1386
+    content: m
+  - delay: 87
+    content: e
+  - delay: 135
+    content: 'n'
+  - delay: 554
+    content: u
+  - delay: 1169
+    content: ' '
+  - delay: 442
+    content: (
+  - delay: 1763
+    content: "\r\n"
+  - delay: 16
+    content: '    -> '
+  - delay: 4714
+    content: i
+  - delay: 134
+    content: d
+  - delay: 716
+    content: _
+  - delay: 631
+    content: m
+  - delay: 75
+    content: e
+  - delay: 131
+    content: 'n'
+  - delay: 269
+    content: u
+  - delay: 3984
+    content: ' '
+  - delay: 868
+    content: p
+  - delay: 138
+    content: r
+  - delay: 176
+    content: i
+  - delay: 207
+    content: m
+  - delay: 41
+    content: a
+  - delay: 478
+    content: r
+  - delay: 464
+    content: "\b \b"
+  - delay: 183
+    content: "\b \b"
+  - delay: 163
+    content: "\b \b"
+  - delay: 149
+    content: "\b \b"
+  - delay: 156
+    content: "\b \b"
+  - delay: 195
+    content: "\b \b"
+  - delay: 500
+    content: i
+  - delay: 226
+    content: 'n'
+  - delay: 172
+    content: t
+  - delay: 131
+    content: ' '
+  - delay: 248
+    content: p
+  - delay: 139
+    content: r
+  - delay: 183
+    content: i
+  - delay: 217
+    content: m
+  - delay: 116
+    content: a
+  - delay: 293
+    content: r
+  - delay: 221
+    content: 'y'
+  - delay: 69
+    content: ' '
+  - delay: 334
+    content: k
+  - delay: 127
+    content: e
+  - delay: 178
+    content: 'y'
+  - delay: 127
+    content: ' '
+  - delay: 611
+    content: a
+  - delay: 130
+    content: u
+  - delay: 166
+    content: t
+  - delay: 134
+    content: o
+  - delay: 160
+    content: ' '
+  - delay: 420
+    content: "\b \b"
+  - delay: 342
+    content: _
+  - delay: 509
+    content: i
+  - delay: 247
+    content: 'n'
+  - delay: 203
+    content: c
+  - delay: 298
+    content: r
+  - delay: 80
+    content: e
+  - delay: 148
+    content: m
+  - delay: 55
+    content: e
+  - delay: 166
+    content: 'n'
+  - delay: 369
+    content: t
+  - delay: 745
+    content: ;
+  - delay: 655
+    content: "\r\n"
+  - delay: 21
+    content: "ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 2\r\nMariaDB [warteg]> "
+  - delay: 11054
+    content: e
+  - delay: 410
+    content: x
+  - delay: 226
+    content: i
+  - delay: 167
+    content: t
+  - delay: 3759
+    content: "\r\n"
+  - delay: 18
+    content: "Bye\r\nPS C:\\Program Files\\MariaDB 11.8\\bin> "
+  - delay: 1623
+    content: "\e[?25l"
+  - delay: 16
+    content: "\e[93m.\\mysql \e[90m-u \e[37mroot \e[90m-p\e[?25h"
+  - delay: 626
+    content: "\e[m\e[?25l"
+  - delay: 14
+    content: "\e[29;39H\e[18X\e[?25h"
+  - delay: 659
+    content: "\e[?25l"
+  - delay: 13
+    content: "\e[93me\e[?25h"
+  - delay: 392
+    content: "\e[m\e[?25l"
+  - delay: 12
+    content: "\e[93m\bex\e[?25h"
+  - delay: 213
+    content: "\e[m\e[?25l"
+  - delay: 21
+    content: "\e[93m\e[29;39Hexi\e[?25h"
+  - delay: 152
+    content: "\e[m\e[?25l"
+  - delay: 20
+    content: "\e[92m\e[29;39Hexit\e[?25h"
+  - delay: 372
+    content: "\e[m"
+  - delay: 17
+    content: "\r\n"
