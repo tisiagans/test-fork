@@ -1,0 +1,479 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: powershell.exe
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: C:\Users\tasya octavia\Documents
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 120
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 30
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: floating
+    title: Terminalizer
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 12
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 3162
+    content: "\e[2J\e[m\e[HWindows PowerShell\r\nCopyright (C) Microsoft Corporation. All rights reserved.\r\n\r\nTry the new cross-platform PowerShell https://aka.ms/pscore6\e]0;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\a\e[?25h"
+  - delay: 11
+    content: "\e[25l\e[6;1H\e[?25h"
+  - delay: 426
+    content: 'PS C:\Users\tasya octavia\Documents> '
+  - delay: 2083
+    content: "\e[?25l"
+  - delay: 15
+    content: "\e[93mm\e[?25h"
+  - delay: 266
+    content: "\e[m\e[?25l"
+  - delay: 13
+    content: "\e[93m\bmy\e[?25h"
+  - delay: 680
+    content: "\e[m\e[?25l"
+  - delay: 23
+    content: "\e[93m\e[6;38Hmys\e[?25h"
+  - delay: 673
+    content: "\e[m\e[?25l"
+  - delay: 10
+    content: "\e[93m\e[6;38Hmysq\e[?25h"
+  - delay: 362
+    content: "\e[m\e[?25l"
+  - delay: 12
+    content: "\e[93m\e[6;38Hmysql\e[?25h"
+  - delay: 860
+    content: "\e[m\e[?25l"
+  - delay: 14
+    content: "\e[93m\e[6;38Hmysql\e[m \e[?25h"
+  - delay: 493
+    content: "\e[?25l"
+  - delay: 20
+    content: "\e[93m\e[6;38Hmysql\e[m \e[90m-\e[?25h"
+  - delay: 672
+    content: "\e[m\e[?25l"
+  - delay: 7
+    content: "\e[93m\e[6;38Hmysql\e[m \e[90m-u\e[?25h"
+  - delay: 191
+    content: "\e[m\e[?25l"
+  - delay: 9
+    content: "\e[93m\e[6;38Hmysql\e[m \e[90m-u\e[m \e[?25h"
+  - delay: 310
+    content: "\e[?25l"
+  - delay: 20
+    content: "\e[93m\e[6;38Hmysql\e[m \e[90m-u\e[m r\e[?25h"
+  - delay: 371
+    content: "\e[?25l"
+  - delay: 18
+    content: "\e[93m\e[6;38Hmysql\e[m \e[90m-u\e[m ro\e[?25h"
+  - delay: 151
+    content: "\e[?25l"
+  - delay: 11
+    content: "\e[93m\e[6;38Hmysql\e[m \e[90m-u\e[m roo\e[?25h"
+  - delay: 616
+    content: "\e[?25l"
+  - delay: 9
+    content: "\e[93m\e[6;38Hmysql\e[m \e[90m-u\e[m root\e[?25h"
+  - delay: 695
+    content: "\e[?25l"
+  - delay: 12
+    content: "\e[93m\e[6;38Hmysql\e[m \e[90m-u\e[m root \e[?25h"
+  - delay: 207
+    content: "\e[?25l"
+  - delay: 12
+    content: "\e[93m\e[6;38Hmysql\e[m \e[90m-u\e[m root \e[90m-\e[?25h"
+  - delay: 197
+    content: "\e[m\e[?25l"
+  - delay: 21
+    content: "\e[93m\e[6;38Hmysql\e[m \e[90m-u\e[m root \e[90m-p\e[?25h"
+  - delay: 917
+    content: "\e[m\r\n"
+  - delay: 110
+    content: 'Enter password: '
+  - delay: 832
+    content: '*'
+  - delay: 229
+    content: '*'
+  - delay: 232
+    content: '*'
+  - delay: 199
+    content: '*'
+  - delay: 151
+    content: '*'
+  - delay: 199
+    content: '*'
+  - delay: 150
+    content: '*'
+  - delay: 172
+    content: '*'
+  - delay: 132
+    content: '*'
+  - delay: 198
+    content: '*'
+  - delay: 169
+    content: '*'
+  - delay: 421
+    content: '*'
+  - delay: 147
+    content: '*'
+  - delay: 661
+    content: "\r\n"
+  - delay: 129
+    content: Welcome to the MariaDB monitor.  Commands end with ; or \g.
+  - delay: 19
+    content: "\r\nYour MariaDB connection id is 5\e[47X\r\nServer version: 12.0.2-MariaDB mariadb.org binary distribution\e[16X\r\n\e[78X\r\nCopyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.\e[10X\r\n\e[78X\r\nType 'help;' or '\\h' for help. Type '\\c' to clear the current input statement.\r\n\e[78X\r\nMariaDB [(none)]> \e[60X"
+  - delay: 2792
+    content: s
+  - delay: 168
+    content: h
+  - delay: 364
+    content: o
+  - delay: 169
+    content: w
+  - delay: 159
+    content: ' '
+  - delay: 132
+    content: d
+  - delay: 198
+    content: a
+  - delay: 89
+    content: t
+  - delay: 209
+    content: b
+  - delay: 65
+    content: a
+  - delay: 207
+    content: s
+  - delay: 249
+    content: e
+  - delay: 204
+    content: s
+  - delay: 346
+    content: ;
+  - delay: 254
+    content: "\r\n"
+  - delay: 18
+    content: "ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server versi\r\non for the right syntax to use near 'datbases' at line 1\e[K\r\nMariaDB [(none)]> \e[K"
+  - delay: 769
+    content: s
+  - delay: 250
+    content: h
+  - delay: 222
+    content: o
+  - delay: 145
+    content: w
+  - delay: 102
+    content: ' '
+  - delay: 139
+    content: d
+  - delay: 221
+    content: a
+  - delay: 132
+    content: t
+  - delay: 189
+    content: b
+  - delay: 52
+    content: a
+  - delay: 195
+    content: s
+  - delay: 194
+    content: e
+  - delay: 376
+    content: "\b \b"
+  - delay: 214
+    content: "\b \b"
+  - delay: 86
+    content: "\b \b"
+  - delay: 121
+    content: "\b \b"
+  - delay: 270
+    content: a
+  - delay: 401
+    content: b
+  - delay: 440
+    content: a
+  - delay: 159
+    content: s
+  - delay: 211
+    content: e
+  - delay: 238
+    content: s
+  - delay: 324
+    content: ;
+  - delay: 228
+    content: "\r\n"
+  - delay: 7
+    content: "+--------------------+   \r\n| Database           |   \r\n+--------------------+   \r\n| information_schema |   \r\n| library            |   \r\n| mysql              |   \r\n| performance_schema |   \r\n| perpustakaan       |   \r\n| sys                |   \r\n+--------------------+   \r\n6 rows in set (0.001 sec)\r\n"
+  - delay: 11
+    content: "\nMariaDB [(none)]>\e[1C"
+  - delay: 3747
+    content: e
+  - delay: 293
+    content: x
+  - delay: 261
+    content: i
+  - delay: 208
+    content: t
+  - delay: 931
+    content: "\b \b"
+  - delay: 166
+    content: "\b \b"
+  - delay: 140
+    content: "\b \b"
+  - delay: 137
+    content: "\b \b"
+  - delay: 3779
+    content: u
+  - delay: 138
+    content: s
+  - delay: 212
+    content: e
+  - delay: 107
+    content: ' '
+  - delay: 190
+    content: l
+  - delay: 697
+    content: i
+  - delay: 236
+    content: b
+  - delay: 217
+    content: r
+  - delay: 123
+    content: a
+  - delay: 61
+    content: r
+  - delay: 216
+    content: 'y'
+  - delay: 497
+    content: ;
+  - delay: 464
+    content: "\r\nDatabase changed"
+  - delay: 10
+    content: "\r\nMariaDB [library]>\e[1C"
+  - delay: 5549
+    content: s
+  - delay: 284
+    content: h
+  - delay: 196
+    content: o
+  - delay: 127
+    content: w
+  - delay: 125
+    content: ' '
+  - delay: 134
+    content: t
+  - delay: 206
+    content: a
+  - delay: 169
+    content: b
+  - delay: 260
+    content: l
+  - delay: 802
+    content: e
+  - delay: 259
+    content: s
+  - delay: 447
+    content: ;
+  - delay: 340
+    content: "\r\n+-------------------+\r\n| Tables_in_library |"
+  - delay: 11
+    content: "\r\n+-------------------+"
+  - delay: 5
+    content: "\r\n| anggota           |\r\n| buku              |\r\n| peminjaman        |\r\n| transaksi         |\r\n+-------------------+\r\n4 rows in set (0.002 sec)\r\n\nMariaDB [library]>\e[1C"
+  - delay: 2052
+    content: s
+  - delay: 242
+    content: e
+  - delay: 160
+    content: l
+  - delay: 76
+    content: e
+  - delay: 280
+    content: c
+  - delay: 220
+    content: t
+  - delay: 151
+    content: ' '
+  - delay: 573
+    content: '*'
+  - delay: 149
+    content: ' '
+  - delay: 150
+    content: f
+  - delay: 337
+    content: r
+  - delay: 124
+    content: o
+  - delay: 208
+    content: m
+  - delay: 214
+    content: ' '
+  - delay: 115
+    content: b
+  - delay: 247
+    content: u
+  - delay: 800
+    content: k
+  - delay: 167
+    content: u
+  - delay: 374
+    content: ;
+  - delay: 499
+    content: "\r\n"
+  - delay: 293
+    content: "+---------+----------------------------+------------------+--------------+--------------+-----------+------------------+\b\r\n| id_buku | judul                      | penulis          | tahun_terbit | isbn         | kategori  | jumlah_eksemplar |\b"
+  - delay: 17
+    content: "\r\n+---------+----------------------------+------------------+--------------+--------------+-----------+------------------+\b"
+  - delay: 10
+    content: "\r\n|       1 | The Eras Tour              | Taylor Swift     |         2024 | 978602143124 | non fiksi |                1 |\b\r\n|       2 | Cara Menggapai Bias Impian | Simanjuntak      |         2019 | 978602341987 | fiksi     |                2 |\b\r\n|       3 | S"
+  - delay: 22
+    content: "top Being Delusional      | Youngseo         |         2017 | 978602546198 | non fiksi |                1 |\b"
+  - delay: 8
+    content: "\r\n|       4 | Delicate                   | Bugi Harsiun     |         2019 | 978789543654 | fiksi     |                1 |\b\r\n|\e[6C 5 | Ilmu Komunikasi            | Soejono Seokanto |         2008 | 97854398701  | non fiksi |                1 |\b\r\n+---------+----------------------------+------------------+--------------+--------------+-----------+------------------+\b\r\n5 rows in set (0.294 sec)\r\n\nMariaDB [library]>\e[1C"
+  - delay: 1710
+    content: e
+  - delay: 311
+    content: x
+  - delay: 142
+    content: i
+  - delay: 219
+    content: t
+  - delay: 1185
+    content: "\r\nBye\r\n"
+  - delay: 152
+    content: 'PS C:\Users\tasya octavia\Documents> '
+  - delay: 3437
+    content: "\e[?25l"
+  - delay: 23
+    content: "\e[93m^D\e[?25h"
+  - delay: 1467
+    content: "\e[25l\e[m\e[H\e[K\r\nMariaDB [(none)]> use library;\e[K\r\nDatabase changed\e[K\r\nMariaDB [library]> show tables;\e[K\r\n+-------------------+\e[K\r\n| Tables_in_library |\e[K\r\n+-------------------+\e[K\r\n| anggota           |\e[K\r\n| buku              |\e[K\r\n| peminjaman        |\e[K\r\n| transaksi         |\e[K\r\n+-------------------+\e[K\r\n4 rows in set (0.002 sec)\e[K\r\n\e[K\r\nMariaDB [library]> select * from buku;\e[K\r\n+---------+----------------------------+------------------+--------------+--------------+-----------+------------------+\r\n| id_buku | judul                      | penulis          | tahun_terbit | isbn         | kategori  | jumlah_eksemplar |\r\n+---------+----------------------------+------------------+--------------+--------------+-----------+------------------+\r\n|       1 | The Eras Tour              | Taylor Swift     |         2024 | 978602143124 | non fiksi |                1 |\r\n|       2 | Cara Menggapai Bias Impian | Simanjuntak      |         2019 | 978602341987 | fiksi     |                2 |\r\n|       3 | Stop Being Delusional      | Youngseo         |         2017 | 978602546198 | non fiksi |                1 |\r\n|       4 | Delicate                   | Bugi Harsiun     |         2019 | 978789543654 | fiksi     |                1 |\r\n|       5 | Ilmu Komunikasi            | Soejono Seokanto |         2008 | 97854398701  | non fiksi |                1 |\r\n+---------+----------------------------+------------------+--------------+--------------+-----------+------------------+\r\n5 rows in set (0.294 sec)\e[K\r\n\e[K\r\nMariaDB [library]> exit\e[K\r\nBye\e[K\r\nPS C:\\Users\\tasya octavia\\Documents> \e[93m^D\e[m\e[K\r\n\e[K\e[39C\e[?25h"
+  - delay: 10
+    content: "\r"
+  - delay: 233
+    content: "\e[91m♦ : The term '♦' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spell\e[m"
+  - delay: 6
+    content: "\r\n\e[91ming of the name, or if a path was included, verify that the path is correct and try again.\e[m\e[K\r\n\e[91mAt line:1 char:1\e[m\e[K\r\n\e[91m+ ♦\e[m\e[K"
+  - delay: 5
+    content: "\r\n\e[91m+ ~\e[m\e[K\r\n\e[91m    + CategoryInfo          : ObjectNotFound: (♦:String) [], CommandNotFoundException"
+  - delay: 7
+    content: "\e[m\r\n\e[91m    + FullyQualifiedErrorId : CommandNotFoundException\e[m\r\n\e[91m \e[m\e[K"
+  - delay: 15
+    content: "\r\n"
+  - delay: 32
+    content: 'PS C:\Users\tasya octavia\Documents> '
+  - delay: 1950
+    content: "\e[?25l"
+  - delay: 28
+    content: "\e[93me\e[?25h"
+  - delay: 221
+    content: "\e[m\e[?25l"
+  - delay: 9
+    content: "\e[93m\bex\e[?25h"
+  - delay: 166
+    content: "\e[m\e[?25l"
+  - delay: 20
+    content: "\e[93m\e[30;38Hexi\e[?25h"
+  - delay: 196
+    content: "\e[m\e[?25l"
+  - delay: 19
+    content: "\e[92m\e[30;38Hexit\e[?25h"
+  - delay: 682
+    content: "\e[25l\e[m\e[H| peminjaman        |\e[K\r\n| transaksi         |\e[K\r\n+-------------------+\e[K\r\n4 rows in set (0.002 sec)\e[K\r\n\e[K\r\nMariaDB [library]> select * from buku;\e[K\r\n+---------+----------------------------+------------------+--------------+--------------+-----------+------------------+\r\n| id_buku | judul                      | penulis          | tahun_terbit | isbn         | kategori  | jumlah_eksemplar |\r\n+---------+----------------------------+------------------+--------------+--------------+-----------+------------------+\r\n|       1 | The Eras Tour              | Taylor Swift     |         2024 | 978602143124 | non fiksi |                1 |\r\n|       2 | Cara Menggapai Bias Impian | Simanjuntak      |         2019 | 978602341987 | fiksi     |                2 |\r\n|       3 | Stop Being Delusional      | Youngseo         |         2017 | 978602546198 | non fiksi |                1 |\r\n|       4 | Delicate                   | Bugi Harsiun     |         2019 | 978789543654 | fiksi     |                1 |\r\n|       5 | Ilmu Komunikasi            | Soejono Seokanto |         2008 | 97854398701  | non fiksi |                1 |\r\n+---------+----------------------------+------------------+--------------+--------------+-----------+------------------+\r\n5 rows in set (0.294 sec)\e[K\r\n\e[K\r\nMariaDB [library]> exit\e[K\r\nBye\e[K\r\nPS C:\\Users\\tasya octavia\\Documents> \e[93m^D\e[m\e[K\e[91m\r\n♦ : The term '♦' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spell\e[m \e[91m\r\ning of the name, or if a path was included, verify that the path is correct and try again.\e[m\e[K\e[91m\r\nAt line:1 char:1\e[m\e[K\e[91m\r\n+ ♦\e[m\e[K\e[91m\r\n+ ~\e[m\e[K\e[91m\r\n    + CategoryInfo          : ObjectNotFound: (♦:String) [], CommandNotFoundException\e[m\e[K\e[91m\r\n    + FullyQualifiedErrorId : CommandNotFoundException\e[m\e[K\e[91m\r\n \e[m\e[K\r\nPS C:\\Users\\tasya octavia\\Documents> \e[92mexit\e[m\e[K\r\n\e[K\e[41C\e[?25h"
+  - delay: 46
+    content: "\r"
